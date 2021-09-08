@@ -8,10 +8,18 @@ for($i=1; $i<=100; $i++){
 } 
 
 foreach($numeros as $valor){
-    if($valor<0){
+    if($valor<0)
+	{
         echo "el numero $valor es NEGATIVO <br>";
-    }else echo "el numero $valor es POSITIVO <br>";
+	}
+		else if ($Valor > 0)
+		{
+			echo "el numero $valor es POSITIVO <br>";
+		}
+		else 
+		{
+			echo "El número $valor es CERO <br>"  //el cero es considerado un número neutro
+		}
 }
-
 
 ?>
